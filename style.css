@@ -134,6 +134,7 @@ main {
     padding: 100px;
 }
 
+
 .about img {
     order: 2; /* Set the order of the image to 2 to move it to the right */
     flex: 0 0 30%;
@@ -269,57 +270,68 @@ main {
     }
   }
 
-  
-  .carousel {
-    width: 300px;
-    margin: 0 auto;
+  .Our-Events {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    z-index: 1;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    
+}
+
+.events {
+    border: 5px solid rgba(54, 15, 42,0.5);
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    position: relative; /* Add relative positioning to create a new stacking context */
+}
+
+.events img {
+    order: 1;
+    flex: 0 0 30%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.events-content {
+    padding-right: 50px;
+    padding-top: 50px;
+    order: 1;
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+
+.events-title {
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.events-title-container {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
-.carousel-container {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    width: 300px;
-    text-align: center;
-}
-
-.controls {
+.events-title-line::before {
+    content: "";
     position: absolute;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.control-btn {
-    cursor: pointer;
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
-    color: #fff;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-top: 1px solid black;
+    padding-bottom: 15px;
 }
 
-.control-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
-}
-
-.prev {
-    left: 10px; /* Adjust the position of the previous button */
-}
-
-.next {
-    right: 10px; /* Adjust the position of the next button */
+.events-title-line {
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: bold;
 }

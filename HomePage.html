@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <title>Your Website Title</title>
     <link rel="stylesheet" href="style.css"> 
-    
 </head>
 <body>
-
 
 <header>
     <h1>Volunteering in Patras</h1>
@@ -30,18 +28,7 @@
     </div>
 
     <div class="about">
-        <img id="image" src="Picture1.jpg" />
-        <script type="text/javascript">
-            var image = document.getElementById("image");
-            var currentPos = 0;
-            var images = ["Picture1.jpg", "Picture2.jpg", "Picture3.jpg"];
-            function volgendefoto() {
-                if (++currentPos >= images.length)
-                    currentPos = 0;
-                image.src = images[currentPos];
-            }
-            setInterval(volgendefoto, 3000);
-        </script>
+        <img class="about-image" src="Picture1.jpg" />
         <div class="content">
             <div class="title-container">
                 <h1 class="title">About Us</h1>
@@ -50,7 +37,6 @@
             <p>BEST (Board of European Students of Technology) is a nonprofit organization, nonrepresentative and nongovernmental, composed by european students from technical degrees.
                 Our priority is to encourage the communication, cooperation and scientific and technological development between students from different european universities. We offer the students an additional formation to the one received at their universities, and support with the beginning of their professional careers.</p>    
         </div>
-        
     </div>
 
     <div class="wrapper">
@@ -69,34 +55,29 @@
             <span class="text">Volunteers</span>
         </div>
     </div>
-    <!-- Script -->
-    <script src="script.js"></script>
 
-    <div class="carousel">
-        <div class="carousel-container">
-          <div class="carousel-item"><img src="Picture1.jpg" alt="Image 1">
-          <h1>ghvvhj</h1></div>
-          <div class="carousel-item"><img src="Picture2.jpg" alt="Image 2"></div>
-          <div class="carousel-item"><img src="Picture3.jpggit push -u origin main" alt="Image 3"></div>
-          <!-- Add more carousel items as needed -->
+
+    <div class="events">
+        <div class="Our-Events">
+            <h1>Our Events</h1>
         </div>
-        <div class="controls">
-          <button class="control-btn prev" onclick="prevSlide()">Prev</button>
-          <button class="control-btn next" onclick="nextSlide()">Next</button>
+        <img class="events-image" src="Event1.jpg">
+        <div class="events-content">
+            <div class="events-title-container">
+                <h1 class="events-title">Events</h1>
+                <div class="events-title-line"></div>
+            </div>
+            <p>BEST (Board of European Students of Technology) is a nonprofit organization, nonrepresentative and nongovernmental, composed by european students from technical degrees.
+                Our priority is to encourage the communication, cooperation and scientific and technological development between students from different european universities. We offer the students an additional formation to the one received at their universities, and support with the beginning of their professional careers.</p>     
         </div>
     </div>
-
 </main>
-
-
 
 <footer>
     <p>&copy; 2024 Volunteering in Patras. All rights reserved.</p>
 </footer>
-<!--<div class="vertical-line-left"></div>
-<div class="vertical-line-right"></div>-->
-<div class="numbers-section"></div>
 
+<script src="script.js" defer></script>
 
 </body>
 </html>
