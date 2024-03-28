@@ -1,0 +1,325 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffff;
+    color: #360f2a;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid rgba(54,15,42,0.5);
+    z-index: 2;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Header links are on the same line*/
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/*Header links are 50px away from right boarder and 20px between them*/
+header nav ul li {
+    margin-left: 20px; /* Space between list items */
+}
+        
+header nav ul li:last-of-type {
+    margin-right: 150px; /* Space from right border */
+}
+
+/*Make header links white*/
+header nav ul li a {
+    text-decoration: none;
+    color: #360f2a;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+footer {
+    background-color: #360f2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(54,15,42,0.5);
+}
+
+.vertical-line-left, .vertical-line-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-color: rgba(54,15,42);
+    z-index: 1;
+}
+
+.vertical-line-left {
+    left: 0; /* Adjust the left position for the left vertical line */
+}
+
+.vertical-line-right {
+    right: 0; /* Adjust the right position for the right vertical line */
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+}
+
+.after-header {
+    position: relative;
+    background-image: url('header.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px; 
+}
+
+.btn {
+    position: absolute;
+    top: 61%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center the button perfectly */
+    background-color: white;
+    color: rgba(54,15,42);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(54,15,42);
+    color: White;
+    border:  1px solid white;
+
+}
+
+#slogan {
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-style: italic;
+    text-align: center; /* Align the text to the center */
+    margin-top: 10px; /* Add some space between the button and the slogan */
+    position: absolute; /* Position the slogan */
+    top: 69%; 
+    left: 39.5%; 
+}
+
+.AboutUs {
+    /* Your text styles */
+    padding-top: 20px; /* Add padding to separate text from image */
+    padding-left: 100px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.about img {
+    order: 2; /* Set the order of the image to 2 to move it to the right */
+    flex: 0 0 30%;
+    height: auto;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.content {
+    padding-right: 50px;
+    order: 1;
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+
+.title{
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Add position relative */
+}
+
+.title-line::before {
+    content: "";
+    position: absolute;
+    left: 0; /* Position the line on the left */
+    top: 50%; /* Position the line vertically centered */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 40px; /* Adjust the width of the line */
+    border-top: 1px solid black; /* Style the line */
+    padding-bottom: 15px;
+}
+
+.title-line {
+    margin-left: 10px; 
+    padding-left: 10px; /* Add padding to create space between line and title */
+    font-weight: bold; /* Add for better visibility */
+}
+
+.numbers-section {
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+  width: 20px;
+  background-color: rgba(54,15,42);
+}
+
+/*θεσεις και πλάτη κουτιών*/
+.wrapper {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  padding:70px;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  background-color: #f8c3fa; /* Add your desired background color here */
+}
+
+  /*Τα κουτια που περιεχουν τους αριθμούς*/
+  .container {
+    width: 35vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 15px solid  rgba(54,15,42);
+  }
+
+  /*Αριθμοί*/
+  span.num {
+    color:  rgba(54,15,42);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  /*Κειμενο κατω από τους αριθμούς*/
+  span.text {
+    color:  rgba(54,15,42);
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight:bold;
+    line-height: 0;
+  }
+
+  /*Από εδώ και κάτω το χρησιμοποιούμε για όταν θέλουμε να αυξομειώσουμε το μέγεθος της σελίδας*/
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
+
+  
+  .carousel {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.control-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background color on hover */
+}
+
+.prev {
+    left: 10px; /* Adjust the position of the previous button */
+}
+
+.next {
+    right: 10px; /* Adjust the position of the next button */
+}
