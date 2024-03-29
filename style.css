@@ -122,12 +122,6 @@ main {
     left: 39.5%; 
 }
 
-.AboutUs {
-    /* Your text styles */
-    padding-top: 20px; /* Add padding to separate text from image */
-    padding-left: 100px;
-}
-
 .about {
     display: flex;
     align-items: center;
@@ -136,7 +130,7 @@ main {
 
 
 .about img {
-    order: 2; /* Set the order of the image to 2 to move it to the right */
+    order: 2;
     flex: 0 0 30%;
     height: auto;
     margin-left: 20px;
@@ -159,24 +153,24 @@ main {
 .title-container {
     display: flex;
     align-items: center;
-    position: relative; /* Add position relative */
+    position: relative; 
 }
 
 .title-line::before {
     content: "";
     position: absolute;
-    left: 0; /* Position the line on the left */
-    top: 50%; /* Position the line vertically centered */
-    transform: translateY(-50%); /* Center the line vertically */
-    width: 40px; /* Adjust the width of the line */
-    border-top: 1px solid black; /* Style the line */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; 
+    border-top: 1px solid black;
     padding-bottom: 15px;
 }
 
 .title-line {
     margin-left: 10px; 
-    padding-left: 10px; /* Add padding to create space between line and title */
-    font-weight: bold; /* Add for better visibility */
+    padding-left: 10px; 
+    font-weight: bold; 
 }
 
 .numbers-section {
@@ -197,8 +191,8 @@ main {
   padding:70px;
   width: 100vw;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  background-color: #f8c3fa; /* Add your desired background color here */
+  justify-content: center;
+  background-color: #f8c3fa;
 }
 
   /*Τα κουτια που περιεχουν τους αριθμούς*/
@@ -270,68 +264,39 @@ main {
     }
   }
 
-  .Our-Events {
-    position: absolute;
-    top: 40px;
-    left: 45%;
+.events{
+    position: relative;
     z-index: 1;
+    border: 5px solid rgba(54, 15, 42,0.5);
+    padding: 50px;
+}
+
+
+.events h1 {
+    text-align: center;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.events-content{
     display: flex;
-    font-size: 15px;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+}
+.events  img{
+    order: 1;
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Ensures aspect ratio is maintained */
+    margin-left: 50px;
     
 }
 
-.events {
-    border: 5px solid rgba(54, 15, 42,0.5);
-    display: flex;
-    align-items: center;
-    padding: 100px;
-    position: relative; /* Add relative positioning to create a new stacking context */
+.events-info{
+    order: 2;
+    margin-left: 50px;
 }
 
-.events img {
-    order: 1;
-    flex: 0 0 30%;
-    height: auto;
-    margin-left: 20px;
-    margin-right: 50px;
-    padding-top: 50px;
-    align-items: center;
-}
-
-.events-content {
-    padding-right: 50px;
-    padding-top: 50px;
-    order: 1;
-    font-size: 18px;
-    color: #333;
-    text-align: justify;
-}
-
-.events-title {
-    padding-left: 50px;
-    padding-bottom: 10px;
-}
-
-.events-title-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.events-title-line::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    border-top: 1px solid black;
-    padding-bottom: 15px;
-}
-
-.events-title-line {
-    margin-left: 10px;
-    padding-left: 10px;
+.events-info h1{
+    font-size: 25px;
     font-weight: bold;
+    text-align: left;
 }
