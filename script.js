@@ -1,3 +1,4 @@
+//numbers
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
@@ -14,7 +15,7 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 });
 
-// Rotate images in the .about section
+// .about section
 var aboutImage = document.querySelector(".about-image");
 var aboutCurrentPos = 0;
 var aboutImages = ["Picture1.jpg", "Picture2.jpg", "Picture3.jpg"];
@@ -25,25 +26,23 @@ function rotateAboutImage() {
 }
 setInterval(rotateAboutImage, 3000);
 
-// Rotate images in the .events section
+//.partners section
 
-var eventsCurrentPos = 0;
-var eventsImages = ["Event1.jpg", "Event2.jpg", "Event3.jpg"];
-var eventsTitles = ["EBEC", "BEST Course in Summer", "JobFair"]; // Changed the variable name to eventsTitles
-var eventsTexts = ["About Text 1", "About Text 2", "About Text 3"];
-var eventsImage = document.querySelector(".events-image");
-var eventsText = document.querySelector(".events-text");
-var eventsTitle = document.querySelector(".events-title");
+var partnersCurrentPos = 0;
+var partnersImages = ["barilla.png", "elite.png", "misko.png"];
+var partnersTitles = ["EBEC", "BEST Course in Summer", "JobFair"];
+var partnersTexts = ["Barilla", "Elite", "Misko"];
+var partnersImage = document.querySelector(".partners-image");
+var partnersText = document.querySelector(".partners-text");
+var partnersTitle = document.querySelector(".partners-title");
 
-function rotateEventsImage() {
-    // Increment the current position and loop back to the start if necessary
-    eventsCurrentPos = (eventsCurrentPos + 1) % eventsImages.length;
-    eventsImage.src = eventsImages[eventsCurrentPos];
-    eventsText.textContent = eventsTexts[eventsCurrentPos];
-    eventsTitle.textContent = eventsTitles[eventsCurrentPos]; // Corrected variable name
+function rotatePartnersImage() {
+    partnersCurrentPos = (partnersCurrentPos + 1) % partnersImages.length;
+    partnersImage.src = partnersImages[partnersCurrentPos];
+    partnersText.textContent = partnersTexts[partnersCurrentPos];
+    partnersTitle.textContent = partnersTitles[partnersCurrentPos]; 
 }
 
-// Call rotateEventsImage function every 3000 milliseconds (3 seconds)
-setInterval(rotateEventsImage, 3000);
+setInterval(rotatePartnersImage, 3500);
 
 

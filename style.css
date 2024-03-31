@@ -1,54 +1,7 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #ffff;
-    color: #360f2a;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    border-bottom: 1px solid rgba(54,15,42,0.5);
-    z-index: 2;
-}
-
-header h1 {
-    margin: 0;
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/*Header links are on the same line*/
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-/*Header links are 50px away from right boarder and 20px between them*/
-header nav ul li {
-    margin-left: 20px; /* Space between list items */
-}
-        
-header nav ul li:last-of-type {
-    margin-right: 150px; /* Space from right border */
-}
-
-/*Make header links white*/
-header nav ul li a {
-    text-decoration: none;
-    color: #360f2a;
-    font-size: 20px;
-    font-weight:bolder;
 }
 
 footer {
@@ -69,11 +22,11 @@ footer {
 }
 
 .vertical-line-left {
-    left: 0; /* Adjust the left position for the left vertical line */
+    left: 0; 
 }
 
 .vertical-line-right {
-    right: 0; /* Adjust the right position for the right vertical line */
+    right: 0;
 }
 
 main {
@@ -93,7 +46,7 @@ main {
     position: absolute;
     top: 61%; 
     left: 50%; 
-    transform: translate(-50%, -50%); /* Center the button perfectly */
+    transform: translate(-50%, -50%);
     background-color: white;
     color: rgba(54,15,42);
     font-size: 25px;
@@ -115,9 +68,9 @@ main {
     font-size: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     font-style: italic;
-    text-align: center; /* Align the text to the center */
-    margin-top: 10px; /* Add some space between the button and the slogan */
-    position: absolute; /* Position the slogan */
+    text-align: center; 
+    margin-top: 10px; 
+    position: absolute;
     top: 69%; 
     left: 39.5%; 
 }
@@ -143,6 +96,10 @@ main {
     font-size: 18px;
     color: #333;
     text-align: justify;
+}
+
+.content li{
+  list-style: none;
 }
 
 .title{
@@ -182,13 +139,21 @@ main {
 }
 
 /*θεσεις και πλάτη κουτιών*/
+.numbers{
+  background-color: #f8c3fa;
+}
+
+.numbers h1{
+  text-align: center;
+  margin-top: 30px;
+}
+
 .wrapper {
   position: relative;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 150px;
-  padding:70px;
+  margin-top: 120px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -210,6 +175,7 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-bottom: 15px solid  rgba(54,15,42);
   }
+  
 
   /*Αριθμοί*/
   span.num {
@@ -230,73 +196,68 @@ main {
     line-height: 0;
   }
 
-  /*Από εδώ και κάτω το χρησιμοποιούμε για όταν θέλουμε να αυξομειώσουμε το μέγεθος της σελίδας*/
-  @media screen and (max-width: 1024px) {
-    .wrapper {
-      width: 85vw;
-    }
-    .container {
-      height: 26vmin;
-      width: 26vmin;
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .wrapper {
-      width: 90vw;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .container {
-      width: calc(50% - 40px);
-      height: 30vmin;
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .wrapper {
-      gap: 15px;
-    }
-    .container {
-      width: 100%;
-      height: 25vmin;
-      font-size: 8px;
-    }
-  }
+
+.Our-partners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgba(54, 15, 42,0.5);
+  padding: 50px;
+}
+
+
+.Our-partners h1 {
+  text-align: center;
+}
+
+
+.partners-text{
+  text-align: center;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.Our-events{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .events{
-    position: relative;
-    z-index: 1;
-    border: 5px solid rgba(54, 15, 42,0.5);
-    padding: 50px;
+  display: flex;
+  flex-direction: row;
+  
 }
 
-
-.events h1 {
-    text-align: center;
-    font-size: calc(1.375rem + 1.5vw);
+.box {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin-right: 200px; /* Add margin to the right of each box */
 }
 
-.events-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.events  img{
-    order: 1;
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* Ensures aspect ratio is maintained */
-    margin-left: 50px;
-    
+.box:last-child {
+  margin-right: 70px;
 }
 
-.events-info{
-    order: 2;
-    margin-left: 50px;
+.event-image{
+  width: 150%;
+  height: auto;
 }
 
-.events-info h1{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
+.box li {
+  padding-top: 15px;
+  list-style: none;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.box li a {
+  text-decoration: none;
+  color: #360f2a;
+  font-weight: 450;
+}
+
+.box li a:hover{
+  color: blue;
 }
