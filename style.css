@@ -233,7 +233,7 @@ main {
 .box {
   padding-top: 30px;
   padding-bottom: 80px;
-  margin-right: 200px; /* Add margin to the right of each box */
+  margin-right: 200px;
 }
 
 .box:last-child {
