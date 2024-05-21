@@ -48,6 +48,10 @@ header nav ul li a {
     font-weight: bold;
 }
 
+#my-account-link {
+    text-decoration: underline;
+}
+
 .btn-header {
     position: relative;
     background-color: rgba(54,15,42);
@@ -68,3 +72,72 @@ header nav ul li a {
     border:  1px solid rgba(54,15,42);
 
 }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.email, .password{
+    padding-bottom: 15px;
+    text-align: center;
+    border: none;
+}
+
+.email input{
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.password input{
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.login h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.login h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.btn{
+    margin-top: 10px;
+    background-color: rgba(54,15,42);
+    color: white ;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(56, 32, 49);
+    color: White;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #360f2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(54,15,42,0.5);
+    margin-top: auto;
+}
+
